@@ -1,7 +1,10 @@
 from pyttsx3 import *
+from transliterate import* 
+
 while True:
     text=input(">")
-    speak(text)
+    s=print(translit(text, 'en'))
+    speak(s)
 
 
 
